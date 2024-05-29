@@ -1,0 +1,712 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap2010:Annotation.AnnotationText="UPTF00000088eyI8SGVscExpbms+a19fQmFja2luZ0ZpZWxkIjpudWxsLCI8SW5pdGlhbFRvb2x0aXA+a19fQmFja2luZ0ZpZWxkIjpudWxsLCI8VmVyc2lvbj5rX19CYWNraW5nRmllbGQiOjF9" sap:VirtualizedContainerService.HintSize="614,1037.3333333333333" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:um="clr-namespace:UiPath.Mail;assembly=UiPath.Mail.Activities" xmlns:umab="clr-namespace:UiPath.Mail.Activities.Business;assembly=UiPath.Mail.Activities" xmlns:umabh="clr-namespace:UiPath.Mail.Activities.Business.HtmlEditor;assembly=UiPath.Mail.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>System.Numerics</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>UiPath.Mail</x:String>
+      <x:String>UiPath.Mail.Activities.Business</x:String>
+      <x:String>UiPath.Shared.Activities.ConnectionService.Contracts</x:String>
+      <x:String>UiPath.Mail.Activities</x:String>
+      <x:String>UiPath.Mail.Activities.Utils</x:String>
+      <x:String>UiPath.Mail.Activities.Business.HtmlEditor</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
+      <AssemblyReference>UiPath.Mail</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="592,972.6666666666666" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="sd:DataTable" Name="dt_TrainDetails" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:BuildDataTable DataTable="[dt_TrainDetails]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="530,100" sap2010:WorkflowViewState.IdRef="BuildDataTable_1" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;SNo&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Train_x0020_No&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;Train_x0020_Name&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;Departure_x0020_Time&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;Arrival_x0020_Time&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;Seat_x0020_availability&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;Duration&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;  &lt;TableName&gt;&#xA;    &lt;SNo&gt;1&lt;/SNo&gt;&#xA;  &lt;/TableName&gt;&#xA;  &lt;TableName&gt;&#xA;    &lt;SNo&gt;2&lt;/SNo&gt;&#xA;  &lt;/TableName&gt;&#xA;  &lt;TableName&gt;&#xA;    &lt;SNo&gt;3&lt;/SNo&gt;&#xA;  &lt;/TableName&gt;&#xA;&lt;/NewDataSet&gt;" />
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: ConfirmTkt.com: Fastest Train Ticket Booking with easy IRCTC Login" sap:VirtualizedContainerService.HintSize="530,65.33333333333333" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" ScopeGuid="c95e188e-2878-40ab-bcd8-ae46a6cb6c95" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="512,334" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="x:String" Name="Train" />
+              <Variable x:TypeArguments="x:String" Name="Departure" />
+              <Variable x:TypeArguments="x:String" Name="Arrival" />
+              <Variable x:TypeArguments="x:String" Name="Duration" />
+              <Variable x:TypeArguments="x:String" Name="Seats" />
+              <Variable x:TypeArguments="x:String" Name="TrainDetailsOutput" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <Sequence DisplayName="Enter details and search" sap:VirtualizedContainerService.HintSize="450,65.33333333333333" sap2010:WorkflowViewState.IdRef="Sequence_5">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'From'" sap:VirtualizedContainerService.HintSize="450,198.66666666666666" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="c95e188e-2878-40ab-bcd8-ae46a6cb6c95" Version="V3">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="https://www.confirmtkt.com/rbooking-d/" CvTextArea="341, 450, 42, 18" CvTextArgument="From" CvType="Text" DesignTimeRectangle="342, 447, 322, 27" DesignTimeScaleFactor="1.5" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='LABEL' type='' class='' aaname='From' check:innerText='From' /&gt;" Guid="3518ed5a-c020-449c-bc2b-a6774be03e3e" InformativeScreenshot="a782fdab222fbd79084a0f42ef99428c.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Confirm Ticket - Train Ticket booking Online | Train seat availability' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive" />
+                </uix:NClick.Target>
+              </uix:NClick>
+              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'From'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="450,260" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="c95e188e-2878-40ab-bcd8-ae46a6cb6c95" Text="TEN" Version="V3">
+                <uix:NTypeInto.Target>
+                  <uix:TargetAnchorable BrowserURL="https://www.confirmtkt.com/rbooking-d/" CvTextArea="263, 509, 114, 22" CvTextArgument="Enter from" CvType="Text" DesignTimeRectangle="264, 497, 402, 48" DesignTimeScaleFactor="1.5" ElementType="InputBox" FullSelectorArgument="&lt;webctrl tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='text' class='rbt-input-main form-control rbt-input  focus' placeholder='Enter from' aaname='' /&gt;" Guid="3da37d85-be19-4d28-b7f9-03583fd1a6b6" InformativeScreenshot="a08aacd496327f3af3aa83528f93799c.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Confirm Ticket - Train Ticket booking Online | Train seat availability' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CvTextArea="341, 450, 42, 18" CvTextArgument="From" CvType="Text" DesignTimeRectangle="342, 447, 322, 27" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='LABEL' type='' class='' aaname='From' check:innerText='From' /&gt;" SearchSteps="FuzzySelector, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NTypeInto.Target>
+              </uix:NTypeInto>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'TEN -'" sap:VirtualizedContainerService.HintSize="450,198.66666666666666" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="c95e188e-2878-40ab-bcd8-ae46a6cb6c95" Version="V3">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="https://www.confirmtkt.com/rbooking-d/" CvTextArea="261, 578, 240, 21" CvTextArgument="TEN - Tirunelveli Junction" CvType="Text" DesignTimeRectangle="240, 564, 450, 49" DesignTimeScaleFactor="1.5" ElementType="Text" FullSelectorArgument="&lt;webctrl id='source-item-0' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl id='source-item-0' tag='A' type='' class='dropdown-item' aaname='TEN  - Tirunelveli Junction' check:innerText='TEN - Tirunelveli Junction' /&gt;" Guid="ccd778ae-e1c5-4df7-b6dd-33932561c9d3" InformativeScreenshot="06f5a96935db1dc250b6b10c855cd7c2.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Confirm Ticket - Train Ticket booking Online | Train seat availability' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CvTextArea="261, 578, 240, 21" CvTextArgument="TEN - Tirunelveli Junction" CvType="Text" DesignTimeRectangle="261, 577, 240, 21" ElementType="Text" SearchSteps="CV" TargetType="ComputerVisionBased" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NClick.Target>
+              </uix:NClick>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'To'" sap:VirtualizedContainerService.HintSize="450,198.66666666666666" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="c95e188e-2878-40ab-bcd8-ae46a6cb6c95" Version="V3">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="https://www.confirmtkt.com/rbooking-d/" CvTextArea="803, 450, 24, 18" CvTextArgument="To" CvType="Text" DesignTimeRectangle="806, 447, 307, 27" DesignTimeScaleFactor="1.5" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='To' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='To' tag='LABEL' type='' class='' check:innerText='To' /&gt;" Guid="d4c56585-08e7-4a4c-9472-06c69cb12775" InformativeScreenshot="41620108ca5b6de2081c861faa9d3c44.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Confirm Ticket - Train Ticket booking Online | Train seat availability' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive" />
+                </uix:NClick.Target>
+              </uix:NClick>
+              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'To'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="450,260" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="c95e188e-2878-40ab-bcd8-ae46a6cb6c95" Text="MMCT" Version="V3">
+                <uix:NTypeInto.Target>
+                  <uix:TargetAnchorable BrowserURL="https://www.confirmtkt.com/rbooking-d/" CvTextArea="711, 510, 86, 21" CvTextArgument="Enter to" CvType="Text" DesignTimeRectangle="713, 497, 402, 48" DesignTimeScaleFactor="1.5" ElementType="InputBox" FullSelectorArgument="&lt;webctrl tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='text' class='rbt-input-main form-control rbt-input  focus' placeholder='Enter to' aaname='' /&gt;" Guid="22176555-1d95-479e-a7f8-90293b2fe52b" InformativeScreenshot="91e80c7d388d03abac815b86a24bf42f.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Confirm Ticket - Train Ticket booking Online | Train seat availability' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CvTextArea="803, 450, 24, 18" CvTextArgument="To" CvType="Text" DesignTimeRectangle="806, 447, 307, 27" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='To' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='To' tag='LABEL' type='' class='' check:innerText='To' /&gt;" SearchSteps="FuzzySelector, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NTypeInto.Target>
+              </uix:NTypeInto>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'MMCT - Mumbai Central'" sap:VirtualizedContainerService.HintSize="450,198.66666666666666" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="c95e188e-2878-40ab-bcd8-ae46a6cb6c95" Version="V3">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="https://www.confirmtkt.com/rbooking-d/" CvTextArea="711, 578, 66, 21" CvTextArgument="MMCT" CvType="Text" DesignTimeRectangle="713, 576, 63, 25" DesignTimeScaleFactor="1.5" FullSelectorArgument="&lt;webctrl tag='MARK' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='MARK' type='' class='rbt-highlight-text' aaname='MMCT' check:innerText='MMCT' /&gt;" Guid="316edc97-0930-4ecc-9b60-8193adedbc01" InformativeScreenshot="39fde7b08a29764e19097f8025de8763.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Confirm Ticket - Train Ticket booking Online | Train seat availability' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CvTextArea="711, 578, 228, 21" CvTextArgument="MMCT - Mumbai Central" CvType="Text" DesignTimeRectangle="689, 564, 450, 49" ElementType="Text" FullSelectorArgument="&lt;webctrl id='destination-item-0' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl id='destination-item-0' tag='A' type='' class='dropdown-item' aaname='MMCT  - Mumbai Central' check:innerText='MMCT - Mumbai Central' /&gt;" SearchSteps="FuzzySelector, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NClick.Target>
+              </uix:NClick>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Departure Date'" sap:VirtualizedContainerService.HintSize="450,198.66666666666666" sap2010:WorkflowViewState.IdRef="NClick_5" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="c95e188e-2878-40ab-bcd8-ae46a6cb6c95" Version="V3">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="https://www.confirmtkt.com/rbooking-d/" CvTextArea="1239, 450, 122, 21" CvTextArgument="Departure Date" CvType="Text" DesignTimeRectangle="1240, 447, 173, 27" DesignTimeScaleFactor="1.5" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Departure Date' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Departure Date' tag='LABEL' type='' class='' check:innerText='Departure Date' /&gt;" Guid="24c1484f-cbea-4709-8ede-928cd31cdd56" InformativeScreenshot="3800b7f01df63eaba6216001e6d30966.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Confirm Ticket - Train Ticket booking Online | Train seat availability' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive" />
+                </uix:NClick.Target>
+              </uix:NClick>
+              <uix:NClick ActivateBefore="True" ClickType="Double" DisplayName="Click 'BUTTON'" sap:VirtualizedContainerService.HintSize="450,198.66666666666666" sap2010:WorkflowViewState.IdRef="NClick_6" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="c95e188e-2878-40ab-bcd8-ae46a6cb6c95" Version="V3">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="https://www.confirmtkt.com/rbooking-d/" CvElementArea="1507, 536, 30, 31" CvType="ArrowButton" DesignTimeRectangle="1487, 517, 72, 72" DesignTimeScaleFactor="1.5" ElementType="Button" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;button' tabindex='0' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl type='button' tabindex='0' tag='BUTTON' class='MuiButtonBase-root MuiIconButton-root MuiPickersCalendarHeader-iconButton' aaname='' /&gt;" Guid="827590b8-8170-4eef-80d5-64b46318f328" InformativeScreenshot="b72710432355b3b9cb81c00d0bc49e00.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Confirm Ticket - Train Ticket booking Online | Train seat availability' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CvTextArea="1275, 540, 99, 24" CvTextArgument="April 2024" CvType="Text" DesignTimeRectangle="1166, 536, 321, 31" ElementType="Text" FullSelectorArgument="&lt;webctrl idx='7' tag='P' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' tag='P' class='MuiTypography-root MuiTypography-body1 MuiTypography-alignCenter' aaname='April 2024' check:innerText='April 2024' /&gt;" SearchSteps="FuzzySelector, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NClick.Target>
+              </uix:NClick>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Label'" sap:VirtualizedContainerService.HintSize="334,158.66666666666666" sap2010:WorkflowViewState.IdRef="NClick_7" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="c95e188e-2878-40ab-bcd8-ae46a6cb6c95" Version="V3">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="https://www.confirmtkt.com/rbooking-d/" CvTextArea="1373, 767, 25, 21" CvTextArgument="13" CvType="Text" DesignTimeRectangle="1374, 763, 25, 30" DesignTimeScaleFactor="1.5" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='13' tag='P' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='13' tag='P' type='' class='MuiTypography-root MuiTypography-body2 MuiTypography-colorInherit' check:innerText='13' /&gt;" Guid="2dfd5130-dc9b-4929-831e-b538b3a26fe7" InformativeScreenshot="7def08c10fc36c384655e0c59758412a.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Confirm Ticket - Train Ticket booking Online | Train seat availability' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CvTextArea="1373, 767, 25, 21" CvTextArgument="13" CvType="Text" DesignTimeRectangle="1360, 751, 54, 54" ElementType="Button" FullSelectorArgument="&lt;webctrl aaname='13' tag='BUTTON' /&gt;" SearchSteps="FuzzySelector, CV">
+                          <uix:Target.FuzzySelectorArgument>
+                            <InArgument x:TypeArguments="x:String">
+                              <Literal x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="Literal`1_1">&lt;webctrl aaname='13' tag='BUTTON' type='button' class='MuiButtonBase-root MuiIconButton-root MuiPickersDay-day' check:innerText='13' /&gt;</Literal>
+                            </InArgument>
+                          </uix:Target.FuzzySelectorArgument>
+                        </uix:Target>
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NClick.Target>
+              </uix:NClick>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'SEARCH'" sap:VirtualizedContainerService.HintSize="450,181.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_8" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="c95e188e-2878-40ab-bcd8-ae46a6cb6c95" Version="V3">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="https://www.confirmtkt.com/rbooking-d/" CvElementArea="1436, 421, 241, 123" CvTextArea="1487, 465, 136, 34" CvTextArgument="SEARCH" CvType="Button" DesignTimeRectangle="1459, 466, 198, 33" DesignTimeScaleFactor="1.5" ElementType="Text" FullSelectorArgument="&lt;webctrl class='MuiButton-label' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl class='MuiButton-label' tag='SPAN' type='' aaname='SEARCH' check:innerText='SEARCH' /&gt;" Guid="c04a29c7-a282-4d1b-b9ed-4c6cc5c1cc1b" InformativeScreenshot="51cfc8c2a51614d6ed0cfceac5e74c30.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Confirm Ticket - Train Ticket booking Online | Train seat availability' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CvElementArea="1436, 421, 241, 123" CvTextArea="1487, 465, 136, 34" CvTextArgument="SEARCH" CvType="Button" DesignTimeRectangle="1438, 422, 240, 120" ElementType="Button" FullSelectorArgument="&lt;webctrl tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' type='button' class='MuiButtonBase-root MuiButton-root MuiButton-contained ctkt-btn-success' aaname='SEARCH' check:innerText='SEARCH' /&gt;" SearchSteps="FuzzySelector, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NClick.Target>
+              </uix:NClick>
+            </Sequence>
+            <Sequence DisplayName="Get train details - 1" sap:VirtualizedContainerService.HintSize="450,65.33333333333333" sap2010:WorkflowViewState.IdRef="Sequence_3">
+              <Sequence.Variables>
+                <Variable x:TypeArguments="x:String" Name="TrainName" />
+              </Sequence.Variables>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <uix:NGetText DisplayName="Get Text '20923 -'" sap:VirtualizedContainerService.HintSize="478.6666666666667,199.33333333333334" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="c95e188e-2878-40ab-bcd8-ae46a6cb6c95" TextString="[Train]" Version="V3">
+                <uix:NGetText.Target>
+                  <uix:TargetAnchorable BrowserURL="https://www.confirmtkt.com/rbooking-d/trains/from/Tirunelveli%20Junction%20TEN/to/Mumbai%20Central%20MMCT/13-06-2024" CvTextArea="722, 528, 247, 18" CvType="AnyWordGroup" DesignTimeRectangle="725, 524, 641, 27" DesignTimeScaleFactor="1.5" ElementType="Text" FullSelectorArgument="&lt;webctrl class='name' parentid='root' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl class='name' parentid='root' tag='DIV' type='' /&gt;" Guid="e40fd836-3b52-4cff-a8ea-98265da6676b" InformativeScreenshot="cb91396635c52e6b987f1c2053b1ee0e.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Confirm Ticket - Train Ticket booking Online | Train seat availability' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target DesignTimeRectangle="701, 500, 903, 111" FullSelectorArgument="&lt;webctrl class='train-block' parentid='root' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl class='train-block' parentid='root' tag='DIV' type='' aaname='' check:innerText='20923 - GIMB HUMSAFAR&amp;#xD;&amp;#xA;SMTWTFS&amp;#xD;&amp;#xA;05:15 TEN33h 55m15:10 BSR&amp;#xD;&amp;#xA;View Schedule' /&gt;" SearchSteps="FuzzySelector" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NGetText.Target>
+              </uix:NGetText>
+              <Assign sap:VirtualizedContainerService.HintSize="478.6666666666667,125.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_1">
+                <Assign.To>
+                  <OutArgument x:TypeArguments="x:String">[TrainName]</OutArgument>
+                </Assign.To>
+                <Assign.Value>
+                  <InArgument x:TypeArguments="x:String">[Train.Substring(8, 27)]</InArgument>
+                </Assign.Value>
+              </Assign>
+              <uix:NGetText DisplayName="Get Text '20923 - gimb humsafar'" sap:VirtualizedContainerService.HintSize="478.6666666666667,65.33333333333333" sap2010:WorkflowViewState.IdRef="NGetText_2" ScopeIdentifier="c95e188e-2878-40ab-bcd8-ae46a6cb6c95" TextString="[Departure]" Version="V3">
+                <uix:NGetText.Target>
+                  <uix:TargetAnchorable BrowserURL="https://www.confirmtkt.com/rbooking-d/trains/from/Tirunelveli%20Junction%20TEN/to/Mumbai%20Central%20MMCT/13-06-2024" CvTextArea="722, 549, 83, 16" CvType="AnyWordGroup" DesignTimeRectangle="725, 547, 82, 22" DesignTimeScaleFactor="1.5" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='05:15 TEN' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='SPAN' type='' class='' /&gt;" Guid="d8678be1-ad55-4cf8-a08b-a34939ff1c19" InformativeScreenshot="14fa0616b62d6d1d3ac2938047a2e1cd.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Confirm Ticket - Train Ticket booking Online | Train seat availability' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CvTextArea="722, 510, 247, 19" CvTextArgument="20923 - GIMB HUMSAFAR" CvType="Text" DesignTimeRectangle="722, 510, 247, 19" ElementType="Text" FullSelectorArgument="&lt;webctrl class='name' parentid='root' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl class='name' parentid='root' tag='DIV' type='' aaname='20923 -               gimb humsafar' check:innerText='20923 - GIMB HUMSAFAR' /&gt;" SearchSteps="FuzzySelector, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NGetText.Target>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </uix:NGetText>
+              <uix:NGetText DisplayName="Get Text '33h 55m'" sap:VirtualizedContainerService.HintSize="478.6666666666667,65.33333333333333" sap2010:WorkflowViewState.IdRef="NGetText_3" ScopeIdentifier="c95e188e-2878-40ab-bcd8-ae46a6cb6c95" TextString="[Arrival]" Version="V3">
+                <uix:NGetText.Target>
+                  <uix:TargetAnchorable BrowserURL="https://www.confirmtkt.com/rbooking-d/trains/from/Tirunelveli%20Junction%20TEN/to/Mumbai%20Central%20MMCT/13-06-2024" CvTextArea="969, 549, 84, 16" CvType="AnyWordGroup" DesignTimeRectangle="971, 547, 82, 22" DesignTimeScaleFactor="1.5" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='15:10 BSR' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='SPAN' type='' class='' /&gt;" Guid="c1afc946-e88a-46ee-844c-49ff692a9ba5" InformativeScreenshot="40ba3e80b366060c5dd794b666dd1271.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Confirm Ticket - Train Ticket booking Online | Train seat availability' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CvTextArea="852, 548, 72, 18" CvTextArgument="33h 55m" CvType="Text" DesignTimeRectangle="854, 547, 70, 22" ElementType="Text" FullSelectorArgument="&lt;webctrl class='duration' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl class='duration' tag='SPAN' type='' aaname='33h 55m' check:innerText='33h 55m' /&gt;" SearchSteps="FuzzySelector, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NGetText.Target>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </uix:NGetText>
+              <uix:NGetText DisplayName="Get Text '20923 - gimb humsafar'" sap:VirtualizedContainerService.HintSize="478.6666666666667,65.33333333333333" sap2010:WorkflowViewState.IdRef="NGetText_4" ScopeIdentifier="c95e188e-2878-40ab-bcd8-ae46a6cb6c95" TextString="[Duration]" Version="V3">
+                <uix:NGetText.Target>
+                  <uix:TargetAnchorable BrowserURL="https://www.confirmtkt.com/rbooking-d/trains/from/Tirunelveli%20Junction%20TEN/to/Mumbai%20Central%20MMCT/13-06-2024" CvTextArea="852, 548, 72, 18" CvType="AnyWordGroup" DesignTimeRectangle="854, 547, 70, 22" DesignTimeScaleFactor="1.5" ElementType="Text" FullSelectorArgument="&lt;webctrl class='duration' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl class='duration' tag='SPAN' type='' /&gt;" Guid="556510ed-f560-4b56-9d39-00ad7ebb303c" InformativeScreenshot="89bcc15777ed3ad0890a405648222286.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Confirm Ticket - Train Ticket booking Online | Train seat availability' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CvTextArea="722, 510, 247, 19" CvTextArgument="20923 - GIMB HUMSAFAR" CvType="Text" DesignTimeRectangle="725, 506, 641, 27" ElementType="Text" FullSelectorArgument="&lt;webctrl class='name' parentid='root' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl class='name' parentid='root' tag='DIV' type='' aaname='20923 -               gimb humsafar' check:innerText='20923 - GIMB HUMSAFAR' /&gt;" SearchSteps="FuzzySelector, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NGetText.Target>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </uix:NGetText>
+              <uix:NGetText DisplayName="Get Text '3A'" sap:VirtualizedContainerService.HintSize="478.6666666666667,65.33333333333333" sap2010:WorkflowViewState.IdRef="NGetText_5" ScopeIdentifier="c95e188e-2878-40ab-bcd8-ae46a6cb6c95" TextString="[Seats]" Version="V3">
+                <uix:NGetText.Target>
+                  <uix:TargetAnchorable BrowserURL="https://www.confirmtkt.com/rbooking-d/trains/from/Tirunelveli%20Junction%20TEN/to/Mumbai%20Central%20MMCT/13-06-2024" CvTextArea="966, 656, 136, 15" CvType="AnyWordGroup" DesignTimeRectangle="969, 653, 136, 22" DesignTimeScaleFactor="1.5" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='AVAILABLE-0011' class='prediction-confirm' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl class='prediction-confirm' tag='SPAN' type='' /&gt;" Guid="87bd80c4-934d-49ed-b955-9482aa44637e" InformativeScreenshot="471a2853f719180d0840006400874c6f.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Confirm Ticket - Train Ticket booking Online | Train seat availability' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="2">
+                        <uix:Target CvTextArea="966, 623, 22, 15" CvTextArgument="3A" CvType="Text" DesignTimeRectangle="969, 621, 20, 20" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='3A' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='3A' tag='SPAN' type='' class='' check:innerText='3A' /&gt;" SearchSteps="FuzzySelector, CV" />
+                        <uix:Target CvTextArea="722, 528, 247, 18" CvTextArgument="20923 - GIMB HUMSAFAR" CvType="Text" DesignTimeRectangle="725, 524, 641, 27" ElementType="Text" FullSelectorArgument="&lt;webctrl class='name' parentid='root' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl class='name' parentid='root' tag='DIV' type='' aaname='20923 -               gimb humsafar' check:innerText='20923 - GIMB HUMSAFAR' /&gt;" SearchSteps="FuzzySelector, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NGetText.Target>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </uix:NGetText>
+              <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="478.6666666666667,296" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
+                <ui:MultipleAssign.AssignOperations>
+                  <scg:List x:TypeArguments="ui:AssignOperation" Capacity="8">
+                    <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_1">
+                      <ui:AssignOperation.To>
+                        <OutArgument x:TypeArguments="x:Object">[dt_TrainDetails.Rows(0).Item("Train No")]</OutArgument>
+                      </ui:AssignOperation.To>
+                      <ui:AssignOperation.Value>
+                        <InArgument x:TypeArguments="x:String">[Train.Substring(0, 5)]</InArgument>
+                      </ui:AssignOperation.Value>
+                    </ui:AssignOperation>
+                    <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_3">
+                      <ui:AssignOperation.To>
+                        <OutArgument x:TypeArguments="x:Object">[dt_TrainDetails.Rows(0).Item("Departure Time")]</OutArgument>
+                      </ui:AssignOperation.To>
+                      <ui:AssignOperation.Value>
+                        <InArgument x:TypeArguments="x:String">[Departure.Substring(0, 5)]</InArgument>
+                      </ui:AssignOperation.Value>
+                    </ui:AssignOperation>
+                    <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_4">
+                      <ui:AssignOperation.To>
+                        <OutArgument x:TypeArguments="x:Object">[dt_TrainDetails.Rows(0).Item("Arrival Time")]</OutArgument>
+                      </ui:AssignOperation.To>
+                      <ui:AssignOperation.Value>
+                        <InArgument x:TypeArguments="x:String">[Arrival.Substring(0, 5)]</InArgument>
+                      </ui:AssignOperation.Value>
+                    </ui:AssignOperation>
+                    <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_5">
+                      <ui:AssignOperation.To>
+                        <OutArgument x:TypeArguments="x:Object">[dt_TrainDetails.Rows(0).Item("Duration")]</OutArgument>
+                      </ui:AssignOperation.To>
+                      <ui:AssignOperation.Value>
+                        <InArgument x:TypeArguments="x:Object">[Duration]</InArgument>
+                      </ui:AssignOperation.Value>
+                    </ui:AssignOperation>
+                    <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_6">
+                      <ui:AssignOperation.To>
+                        <OutArgument x:TypeArguments="x:Object">[dt_TrainDetails.Rows(0).Item("Seat Availability")]</OutArgument>
+                      </ui:AssignOperation.To>
+                      <ui:AssignOperation.Value>
+                        <InArgument x:TypeArguments="x:Object">[Seats]</InArgument>
+                      </ui:AssignOperation.Value>
+                    </ui:AssignOperation>
+                    <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_12">
+                      <ui:AssignOperation.To>
+                        <OutArgument x:TypeArguments="x:Object">[dt_TrainDetails.Rows(0).Item("Train Name")]</OutArgument>
+                      </ui:AssignOperation.To>
+                      <ui:AssignOperation.Value>
+                        <InArgument x:TypeArguments="x:Object">[TrainName.Trim.ToUpper]</InArgument>
+                      </ui:AssignOperation.Value>
+                    </ui:AssignOperation>
+                  </scg:List>
+                </ui:MultipleAssign.AssignOperations>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </ui:MultipleAssign>
+            </Sequence>
+            <Sequence DisplayName="Get train details - 2" sap:VirtualizedContainerService.HintSize="450,65.33333333333333" sap2010:WorkflowViewState.IdRef="Sequence_7">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <uix:NGetText DisplayName="Get Text '20923 -'" sap:VirtualizedContainerService.HintSize="478.6666666666667,198.66666666666666" sap2010:WorkflowViewState.IdRef="NGetText_6" ScopeIdentifier="c95e188e-2878-40ab-bcd8-ae46a6cb6c95" TextString="[Train]" Version="V3">
+                <uix:NGetText.Target>
+                  <uix:TargetAnchorable BrowserURL="https://www.confirmtkt.com/rbooking-d/trains/from/Tirunelveli%20Junction%20TEN/to/Mumbai%20Central%20MMCT/13-06-2024" CvTextArea="723, 711, 224, 18" CvType="AnyWordGroup" DesignTimeRectangle="725, 707, 641, 27" DesignTimeScaleFactor="1.5" ElementType="Text" FullSelectorArgument="&lt;webctrl class='name' idx='2' parentid='root' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl class='name' type='' parentid='root' tag='DIV' /&gt;" Guid="8a470568-17b0-4ce7-b3c6-128d8351e930" InformativeScreenshot="530dba9132255035c062349f59f739d6.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Confirm Ticket - Train Ticket booking Online | Train seat availability' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target DesignTimeRectangle="701, 683, 903, 111" FullSelectorArgument="&lt;webctrl class='train-block' idx='2' parentid='root' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl class='train-block' type='' parentid='root' tag='DIV' aaname='' check:innerText='16352 - NCJ CSMT EXP&amp;#xD;&amp;#xA;SMTWTFS&amp;#xD;&amp;#xA;08:00 TEN35h 15m19:15 CSMT&amp;#xD;&amp;#xA;View Schedule' /&gt;" SearchSteps="FuzzySelector" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NGetText.Target>
+              </uix:NGetText>
+              <uix:NGetText DisplayName="Get Text '20923 - gimb humsafar'" sap:VirtualizedContainerService.HintSize="478.6666666666667,198.66666666666666" sap2010:WorkflowViewState.IdRef="NGetText_7" ScopeIdentifier="c95e188e-2878-40ab-bcd8-ae46a6cb6c95" TextString="[Departure]" Version="V3">
+                <uix:NGetText.Target>
+                  <uix:TargetAnchorable BrowserURL="https://www.confirmtkt.com/rbooking-d/trains/from/Tirunelveli%20Junction%20TEN/to/Mumbai%20Central%20MMCT/13-06-2024" CvTextArea="722, 749, 85, 18" CvType="AnyWordGroup" DesignTimeRectangle="725, 748, 82, 22" DesignTimeScaleFactor="1.5" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='08:00 TEN' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='SPAN' type='' class='' /&gt;" Guid="b90f997b-126b-4b77-b664-afea0c57858f" InformativeScreenshot="e7ec66fb36c1b6be0ca3460748bb0e61.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Confirm Ticket - Train Ticket booking Online | Train seat availability' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CvTextArea="723, 711, 224, 18" CvTextArgument="16352 - NCJ CSMT EXP" CvType="Text" DesignTimeRectangle="723, 711, 225, 19" ElementType="Text" FullSelectorArgument="&lt;webctrl class='name' idx='2' parentid='root' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl class='name' type='' parentid='root' tag='DIV' aaname='16352 -               ncj csmt exp' check:innerText='16352 - NCJ CSMT EXP' /&gt;" SearchSteps="FuzzySelector, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NGetText.Target>
+              </uix:NGetText>
+              <uix:NGetText DisplayName="Get Text '33h 55m'" sap:VirtualizedContainerService.HintSize="478.6666666666667,198.66666666666666" sap2010:WorkflowViewState.IdRef="NGetText_8" ScopeIdentifier="c95e188e-2878-40ab-bcd8-ae46a6cb6c95" TextString="[Arrival]" Version="V3">
+                <uix:NGetText.Target>
+                  <uix:TargetAnchorable BrowserURL="https://www.confirmtkt.com/rbooking-d/trains/from/Tirunelveli%20Junction%20TEN/to/Mumbai%20Central%20MMCT/13-06-2024" CvTextArea="969, 750, 99, 16" CvType="AnyWordGroup" DesignTimeRectangle="971, 748, 98, 22" DesignTimeScaleFactor="1.5" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='19:15 CSMT' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='SPAN' type='' class='' /&gt;" Guid="4d5062b8-8cd4-46df-a480-afef961796b2" InformativeScreenshot="6760eb0546f8c0c4fa9139769c814007.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Confirm Ticket - Train Ticket booking Online | Train seat availability' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CvTextArea="852, 749, 71, 18" CvTextArgument="35h 15m" CvType="Text" DesignTimeRectangle="854, 748, 70, 22" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='35h 15m' class='duration' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='35h 15m' class='duration' tag='SPAN' type='' check:innerText='35h 15m' /&gt;" SearchSteps="FuzzySelector, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NGetText.Target>
+              </uix:NGetText>
+              <uix:NGetText DisplayName="Get Text '20923 - gimb humsafar'" sap:VirtualizedContainerService.HintSize="478.6666666666667,198.66666666666666" sap2010:WorkflowViewState.IdRef="NGetText_9" ScopeIdentifier="c95e188e-2878-40ab-bcd8-ae46a6cb6c95" TextString="[Duration]" Version="V3">
+                <uix:NGetText.Target>
+                  <uix:TargetAnchorable BrowserURL="https://www.confirmtkt.com/rbooking-d/trains/from/Tirunelveli%20Junction%20TEN/to/Mumbai%20Central%20MMCT/13-06-2024" CvTextArea="852, 749, 71, 18" CvType="AnyWordGroup" DesignTimeRectangle="854, 748, 70, 22" DesignTimeScaleFactor="1.5" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='35h 15m' class='duration' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl class='duration' tag='SPAN' type='' /&gt;" Guid="dfe75dce-56f2-414e-9fb0-d28672607d0f" InformativeScreenshot="c79b81761fc6fb18c5cc7ec190b0ade7.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Confirm Ticket - Train Ticket booking Online | Train seat availability' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CvTextArea="723, 711, 224, 18" CvTextArgument="16352 - NCJ CSMT EXP" CvType="Text" DesignTimeRectangle="725, 707, 641, 27" ElementType="Text" FullSelectorArgument="&lt;webctrl class='name' idx='2' parentid='root' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl class='name' type='' parentid='root' tag='DIV' aaname='16352 -               ncj csmt exp' check:innerText='16352 - NCJ CSMT EXP' /&gt;" SearchSteps="FuzzySelector, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NGetText.Target>
+              </uix:NGetText>
+              <uix:NGetText DisplayName="Get Text '3A'" sap:VirtualizedContainerService.HintSize="478.6666666666667,198.66666666666666" sap2010:WorkflowViewState.IdRef="NGetText_10" ScopeIdentifier="c95e188e-2878-40ab-bcd8-ae46a6cb6c95" TextString="[Seats]" Version="V3">
+                <uix:NGetText.Target>
+                  <uix:TargetAnchorable BrowserURL="https://www.confirmtkt.com/rbooking-d/trains/from/Tirunelveli%20Junction%20TEN/to/Mumbai%20Central%20MMCT/13-06-2024" CvTextArea="968, 839, 126, 16" CvType="AnyWordGroup" DesignTimeRectangle="969, 836, 125, 22" DesignTimeScaleFactor="1.5" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='RAC  13/RAC  13' class='prediction-confirm' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl class='prediction-confirm' tag='SPAN' type='' /&gt;" Guid="81f25132-9556-4c06-bee6-0f28dde97c33" InformativeScreenshot="cf41a0d52f0d71d7a00083318b63abe8.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Confirm Ticket - Train Ticket booking Online | Train seat availability' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="2">
+                        <uix:Target CvTextArea="966, 806, 22, 16" CvTextArgument="3A" CvType="Text" DesignTimeRectangle="969, 804, 20, 20" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='3A' idx='2' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='3A' type='' tag='SPAN' class='' check:innerText='3A' /&gt;" SearchSteps="FuzzySelector, CV" />
+                        <uix:Target CvTextArea="723, 711, 224, 18" CvTextArgument="16352 - NCJ CSMT EXP" CvType="Text" DesignTimeRectangle="725, 707, 641, 27" ElementType="Text" FullSelectorArgument="&lt;webctrl class='name' idx='2' parentid='root' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl class='name' type='' parentid='root' tag='DIV' aaname='16352 -               ncj csmt exp' check:innerText='16352 - NCJ CSMT EXP' /&gt;" SearchSteps="FuzzySelector, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NGetText.Target>
+              </uix:NGetText>
+              <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="478.6666666666667,295.3333333333333" sap2010:WorkflowViewState.IdRef="MultipleAssign_2">
+                <ui:MultipleAssign.AssignOperations>
+                  <scg:List x:TypeArguments="ui:AssignOperation" Capacity="8">
+                    <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_7">
+                      <ui:AssignOperation.To>
+                        <OutArgument x:TypeArguments="x:Object">[dt_TrainDetails.Rows(1).Item("Train No")]</OutArgument>
+                      </ui:AssignOperation.To>
+                      <ui:AssignOperation.Value>
+                        <InArgument x:TypeArguments="x:Object">[Train.Substring(0, 5)]</InArgument>
+                      </ui:AssignOperation.Value>
+                    </ui:AssignOperation>
+                    <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_8">
+                      <ui:AssignOperation.To>
+                        <OutArgument x:TypeArguments="x:Object">[dt_TrainDetails.Rows(1).Item("Departure Time")]</OutArgument>
+                      </ui:AssignOperation.To>
+                      <ui:AssignOperation.Value>
+                        <InArgument x:TypeArguments="x:Object">[Departure.Substring(0, 5)]</InArgument>
+                      </ui:AssignOperation.Value>
+                    </ui:AssignOperation>
+                    <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_9">
+                      <ui:AssignOperation.To>
+                        <OutArgument x:TypeArguments="x:Object">[dt_TrainDetails.Rows(1).Item("Arrival Time")]</OutArgument>
+                      </ui:AssignOperation.To>
+                      <ui:AssignOperation.Value>
+                        <InArgument x:TypeArguments="x:Object">[Arrival.Substring(0, 5)]</InArgument>
+                      </ui:AssignOperation.Value>
+                    </ui:AssignOperation>
+                    <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_10">
+                      <ui:AssignOperation.To>
+                        <OutArgument x:TypeArguments="x:Object">[dt_TrainDetails.Rows(1).Item("Duration")]</OutArgument>
+                      </ui:AssignOperation.To>
+                      <ui:AssignOperation.Value>
+                        <InArgument x:TypeArguments="x:Object">[Duration]</InArgument>
+                      </ui:AssignOperation.Value>
+                    </ui:AssignOperation>
+                    <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_11">
+                      <ui:AssignOperation.To>
+                        <OutArgument x:TypeArguments="x:Object">[dt_TrainDetails.Rows(1).Item("Seat Availability")]</OutArgument>
+                      </ui:AssignOperation.To>
+                      <ui:AssignOperation.Value>
+                        <InArgument x:TypeArguments="x:Object">[Seats]</InArgument>
+                      </ui:AssignOperation.Value>
+                    </ui:AssignOperation>
+                    <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_13">
+                      <ui:AssignOperation.To>
+                        <OutArgument x:TypeArguments="x:Object">[dt_TrainDetails.Rows(1).Item("Train Name")]</OutArgument>
+                      </ui:AssignOperation.To>
+                      <ui:AssignOperation.Value>
+                        <InArgument x:TypeArguments="x:Object">[Train.Substring(8, 26).Trim.ToUpper]</InArgument>
+                      </ui:AssignOperation.Value>
+                    </ui:AssignOperation>
+                  </scg:List>
+                </ui:MultipleAssign.AssignOperations>
+              </ui:MultipleAssign>
+            </Sequence>
+            <Sequence DisplayName="Get train details - 3" sap:VirtualizedContainerService.HintSize="450,50.666666666666664" sap2010:WorkflowViewState.IdRef="Sequence_8">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <uix:NGetText DisplayName="Get Text '20923 -'" sap:VirtualizedContainerService.HintSize="478.6666666666667,198.66666666666666" sap2010:WorkflowViewState.IdRef="NGetText_11" ScopeIdentifier="c95e188e-2878-40ab-bcd8-ae46a6cb6c95" TextString="[Train]" Version="V3">
+                <uix:NGetText.Target>
+                  <uix:TargetAnchorable BrowserURL="https://www.confirmtkt.com/rbooking-d/trains/from/Tirunelveli%20Junction%20TEN/to/Mumbai%20Central%20MMCT/13-06-2024" CvTextArea="723, 726, 243, 18" CvType="AnyWordGroup" DesignTimeRectangle="725, 722, 641, 27" DesignTimeScaleFactor="1.5" ElementType="Text" FullSelectorArgument="&lt;webctrl class='name' idx='3' parentid='root' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl class='name' type='' parentid='root' tag='DIV' /&gt;" Guid="2e97eb29-d733-4312-b558-6a3e2eb53f96" InformativeScreenshot="e92344658bce0eab7575cf421ef4ca4e.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Confirm Ticket - Train Ticket booking Online | Train seat availability' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target DesignTimeRectangle="701, 698, 903, 111" FullSelectorArgument="&lt;webctrl class='train-block' idx='3' parentid='root' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl class='train-block' type='' parentid='root' tag='DIV' aaname='' check:innerText='11022 - TEN DR EXPRESS&amp;#xD;&amp;#xA;SMTWTFS&amp;#xD;&amp;#xA;15:25 TEN38h 10m05:35 DR&amp;#xD;&amp;#xA;View Schedule' /&gt;" SearchSteps="FuzzySelector" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NGetText.Target>
+              </uix:NGetText>
+              <uix:NGetText DisplayName="Get Text '20923 - gimb humsafar'" sap:VirtualizedContainerService.HintSize="478.6666666666667,198.66666666666666" sap2010:WorkflowViewState.IdRef="NGetText_12" ScopeIdentifier="c95e188e-2878-40ab-bcd8-ae46a6cb6c95" TextString="[Departure]" Version="V3">
+                <uix:NGetText.Target>
+                  <uix:TargetAnchorable BrowserURL="https://www.confirmtkt.com/rbooking-d/trains/from/Tirunelveli%20Junction%20TEN/to/Mumbai%20Central%20MMCT/13-06-2024" CvTextArea="723, 735, 84, 16" CvType="AnyWordGroup" DesignTimeRectangle="725, 733, 82, 22" DesignTimeScaleFactor="1.5" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='15:25 TEN' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='SPAN' type='' class='' /&gt;" Guid="16e6ea40-18e5-4e77-b38b-672e2b86a4b8" InformativeScreenshot="e76c1f37e61fb47a0c5a2c850152ec3f.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Confirm Ticket - Train Ticket booking Online | Train seat availability' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CvTextArea="723, 696, 243, 18" CvTextArgument="11022 - TEN DR EXPRESS" CvType="Text" DesignTimeRectangle="723, 696, 243, 19" ElementType="Text" FullSelectorArgument="&lt;webctrl class='name' idx='3' parentid='root' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl class='name' type='' parentid='root' tag='DIV' aaname='11022 -               ten dr express' check:innerText='11022 - TEN DR EXPRESS' /&gt;" SearchSteps="FuzzySelector, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NGetText.Target>
+              </uix:NGetText>
+              <uix:NGetText DisplayName="Get Text '33h 55m'" sap:VirtualizedContainerService.HintSize="478.6666666666667,198.66666666666666" sap2010:WorkflowViewState.IdRef="NGetText_13" ScopeIdentifier="c95e188e-2878-40ab-bcd8-ae46a6cb6c95" TextString="[Arrival]" Version="V3">
+                <uix:NGetText.Target>
+                  <uix:TargetAnchorable BrowserURL="https://www.confirmtkt.com/rbooking-d/trains/from/Tirunelveli%20Junction%20TEN/to/Mumbai%20Central%20MMCT/13-06-2024" CvTextArea="969, 765, 74, 16" CvType="AnyWordGroup" DesignTimeRectangle="971, 763, 72, 22" DesignTimeScaleFactor="1.5" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='05:35 DR' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='SPAN' type='' class='' /&gt;" Guid="6fbc5105-2c8d-4001-a9cd-87d9e7541344" InformativeScreenshot="af933e2a874df31e7b06dea8811d20c6.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Confirm Ticket - Train Ticket booking Online | Train seat availability' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CvTextArea="852, 764, 72, 18" CvTextArgument="38h 10m" CvType="Text" DesignTimeRectangle="854, 763, 70, 22" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='38h 10m' class='duration' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='38h 10m' class='duration' tag='SPAN' type='' check:innerText='38h 10m' /&gt;" SearchSteps="FuzzySelector, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NGetText.Target>
+              </uix:NGetText>
+              <uix:NGetText DisplayName="Get Text '20923 - gimb humsafar'" sap:VirtualizedContainerService.HintSize="478.6666666666667,198.66666666666666" sap2010:WorkflowViewState.IdRef="NGetText_14" ScopeIdentifier="c95e188e-2878-40ab-bcd8-ae46a6cb6c95" TextString="[Duration]" Version="V3">
+                <uix:NGetText.Target>
+                  <uix:TargetAnchorable BrowserURL="https://www.confirmtkt.com/rbooking-d/trains/from/Tirunelveli%20Junction%20TEN/to/Mumbai%20Central%20MMCT/13-06-2024" CvTextArea="852, 614, 72, 18" CvType="AnyWordGroup" DesignTimeRectangle="854, 613, 70, 22" DesignTimeScaleFactor="1.5" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='38h 10m' class='duration' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl class='duration' tag='SPAN' type='' /&gt;" Guid="a99b7dc1-7dd0-4e2f-8176-6e09f537519f" InformativeScreenshot="525a59c75b63e7fe4d061149384ac27c.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Confirm Ticket - Train Ticket booking Online | Train seat availability' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CvTextArea="723, 576, 243, 18" CvTextArgument="11022 - TEN DR EXPRESS" CvType="Text" DesignTimeRectangle="725, 572, 641, 27" ElementType="Text" FullSelectorArgument="&lt;webctrl class='name' idx='3' parentid='root' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl class='name' type='' parentid='root' tag='DIV' aaname='11022 -               ten dr express' check:innerText='11022 - TEN DR EXPRESS' /&gt;" SearchSteps="FuzzySelector, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NGetText.Target>
+              </uix:NGetText>
+              <uix:NGetText DisplayName="Get Text '3A'" sap:VirtualizedContainerService.HintSize="478.6666666666667,198.66666666666666" sap2010:WorkflowViewState.IdRef="NGetText_15" ScopeIdentifier="c95e188e-2878-40ab-bcd8-ae46a6cb6c95" TextString="[Seats]" Version="V3">
+                <uix:NGetText.Target>
+                  <uix:TargetAnchorable BrowserURL="https://www.confirmtkt.com/rbooking-d/trains/from/Tirunelveli%20Junction%20TEN/to/Mumbai%20Central%20MMCT/13-06-2024" CvTextArea="966, 702, 139, 18" CvType="AnyWordGroup" DesignTimeRectangle="969, 701, 136, 22" DesignTimeScaleFactor="1.5" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='AVAILABLE-0006' class='prediction-confirm' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl class='prediction-confirm' tag='SPAN' type='' /&gt;" Guid="bb66c1c3-b0d8-4965-b4e9-dd0502c9b996" InformativeScreenshot="a74b1ee69ab26edf1881055e41e3298f.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Confirm Ticket - Train Ticket booking Online | Train seat availability' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="2">
+                        <uix:Target CvTextArea="966, 671, 22, 16" CvTextArgument="3A" CvType="Text" DesignTimeRectangle="969, 669, 20, 20" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='3A' idx='3' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='3A' type='' tag='SPAN' class='' check:innerText='3A' /&gt;" SearchSteps="FuzzySelector, CV" />
+                        <uix:Target CvTextArea="723, 576, 243, 18" CvTextArgument="11022 - TEN DR EXPRESS" CvType="Text" DesignTimeRectangle="725, 572, 641, 27" ElementType="Text" FullSelectorArgument="&lt;webctrl class='name' idx='3' parentid='root' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl class='name' type='' parentid='root' tag='DIV' aaname='11022 -               ten dr express' check:innerText='11022 - TEN DR EXPRESS' /&gt;" SearchSteps="FuzzySelector, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NGetText.Target>
+              </uix:NGetText>
+              <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="478.6666666666667,295.3333333333333" sap2010:WorkflowViewState.IdRef="MultipleAssign_3">
+                <ui:MultipleAssign.AssignOperations>
+                  <scg:List x:TypeArguments="ui:AssignOperation" Capacity="8">
+                    <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_14">
+                      <ui:AssignOperation.To>
+                        <OutArgument x:TypeArguments="x:Object">[dt_TrainDetails.Rows(2).Item("Train No")]</OutArgument>
+                      </ui:AssignOperation.To>
+                      <ui:AssignOperation.Value>
+                        <InArgument x:TypeArguments="x:Object">[Train.Substring(0, 5)]</InArgument>
+                      </ui:AssignOperation.Value>
+                    </ui:AssignOperation>
+                    <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_15">
+                      <ui:AssignOperation.To>
+                        <OutArgument x:TypeArguments="x:Object">[dt_TrainDetails.Rows(2).Item("Departure Time")]</OutArgument>
+                      </ui:AssignOperation.To>
+                      <ui:AssignOperation.Value>
+                        <InArgument x:TypeArguments="x:Object">[Departure.Substring(0, 5)]</InArgument>
+                      </ui:AssignOperation.Value>
+                    </ui:AssignOperation>
+                    <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_16">
+                      <ui:AssignOperation.To>
+                        <OutArgument x:TypeArguments="x:Object">[dt_TrainDetails.Rows(2).Item("Arrival Time")]</OutArgument>
+                      </ui:AssignOperation.To>
+                      <ui:AssignOperation.Value>
+                        <InArgument x:TypeArguments="x:Object">[Arrival.Substring(0, 5)]</InArgument>
+                      </ui:AssignOperation.Value>
+                    </ui:AssignOperation>
+                    <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_17">
+                      <ui:AssignOperation.To>
+                        <OutArgument x:TypeArguments="x:Object">[dt_TrainDetails.Rows(2).Item("Duration")]</OutArgument>
+                      </ui:AssignOperation.To>
+                      <ui:AssignOperation.Value>
+                        <InArgument x:TypeArguments="x:Object">[Duration]</InArgument>
+                      </ui:AssignOperation.Value>
+                    </ui:AssignOperation>
+                    <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_18">
+                      <ui:AssignOperation.To>
+                        <OutArgument x:TypeArguments="x:Object">[dt_TrainDetails.Rows(2).Item("Seat Availability")]</OutArgument>
+                      </ui:AssignOperation.To>
+                      <ui:AssignOperation.Value>
+                        <InArgument x:TypeArguments="x:Object">[Seats]</InArgument>
+                      </ui:AssignOperation.Value>
+                    </ui:AssignOperation>
+                    <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_19">
+                      <ui:AssignOperation.To>
+                        <OutArgument x:TypeArguments="x:Object">[dt_TrainDetails.Rows(2).Item("Train Name")]</OutArgument>
+                      </ui:AssignOperation.To>
+                      <ui:AssignOperation.Value>
+                        <InArgument x:TypeArguments="x:Object">[Train.Substring(8, 26).Trim.ToUpper]</InArgument>
+                      </ui:AssignOperation.Value>
+                    </ui:AssignOperation>
+                  </scg:List>
+                </ui:MultipleAssign.AssignOperations>
+              </ui:MultipleAssign>
+            </Sequence>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-11, -11, 1942, 1042" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAkpSURBVHhe7Z2HVhVHGMd9BB/BR/ARPEmMXdFYkoMnEjXGhjWWRI1GozHlaCzRaI5RmtgbYFdQbKgB7KBIk2Khg3SYzH/5buTe++1tu7PLXe4/53eO4e7MfGXv3p2Z3ZkBZuujA8OGSKIk6xwI/BpCrvYNSYMGS7ZKciSiHwF/4fdgCoW1kg3HSIoknHH9DcQhhkKjVmiIGuQM6e+oS4SseJAknRqK4BvEaRCFzrhkZTjra6nyCIGBeBn/NshK8EPDNRAhMLZSKIOXLLzfo7IIobGfQhq4ZCHbzvyPDwwXqy7/IO6X/ysa2hpFt/wvVL1vb9bq2Xp7uxiRMJZtzyIC/ybIg3HN5ypRTvSxaeLRm8cUPnP1tumtWHphBduuRfj/TZAHoWNlyw9uzMmZorq5msKlRh1dnWJe6kK2fQtAXH133OQBtvRoRySOFcV1JRQmtUI7aI+zwwJyKNTekh8u8jjYMjZc+5nCY40ScpNYOyxiEYX8g+QfB0psu9e/UXKLQmON6lvrxdC4kawtFoA4D6TQ90j+AaN93MHKmHHqG5H4IFnkVeWLru4uCo11Km8oFyn5aWLhuaWsfYpZR6HvkfyDZeM70ceniayyexQGfXXKH8zTeSlakkLlxNNTWj3+lFP5QCw69y1rryKKKPRa8DHOzR1kKkPjR4r92XGivaud3PatO6+y2HqCBfUEqquFGWJ88iS2HgVEuRKgvMcbm7ZY1LTUkpuB6XpxJltXsKCeYNTR1SGWX/yerctkenrI8h9KLz/TT80SLR0t5F7gsisBEOxdcn4ZW5+JFCH4GGbmPjSFUYnjREHNS3IrOGWW3GTrDBbUE4qa2pq0k4er0yyQAMzhsh+awcWCy+RO8GpobRAbr28W311eHTLrMzZq9YSq0rpSMVKeRJxvZoAEKLv9xACYE4QfZs4/M1CWgDEHJxg68/qaVPUVlCVg192/yHRnKKPoOuunUZQloLC2iEx3hkrqSlg/jaIkAdNOzCCznSX4xflrBCUJ2JG1i0x2luAX568RlCQA4zdOFPzi/DWCkgTcLL1NJjtL8Ivz1whKEpBdkUMme6u2pU7kvcvvs6DjpSf4xflrBCUJyK18QCZ7y8KRxpC5qzNUDr+4441geQLmpdk2IR4w5Q0VZK27HJGA+NxEtkxfAU9m6MkRCcD0I1emr7D73l6y1FuOSEB3d7eYfCSaLdcXePj6EVnqLUckANp1dw9bzm6mHJ1KFvJyTALuV2Sz5exmy61tZCEvxyQAk/KjEqPYsnZyy08H0jEJgGx6FkeX4Qlj/M5bOyoB2+7sZMvaxcbrv5Bl+nJUAsx65scsrhSmk2X6clQCWjtaxQj5tefKWw2eEQ1k+tRRCYBWXlrFlreaOamxZJFvOS4Bac/PseWtZn3GJrLItxyXADwi/kncCLYOK7lceJUs8i3HJQCan7aIrcMqcALUB/j4jCMTEG/vmypiwdklZIl/OTIBz6tesHVYRfKjw2SJfzkyAVBFQ6V4/OaJ5byoLiALApNjExAuiiTAZkUSYLMiCbBZkQTYrEgCbFYkATbLUQno7O7UnkBIzT8rjj05IbLK7oq2zjb6VK3QTnZlrjj9LEUcf3pKe+QQ9viToxKw6spar3J4I7FK8XI1CHTs2cVebWNIAos7+ZJjEnCx4BJbDiy7sJKOUqPEBwfZdsGvN7bQUbwck4C5qQvYci5K617RkeZr0uEv2DbBp/GjtHeD9eSYBIxJmsCWc3GzVM3SNU3tTWx7vfE1PhQ2CfD1fgA08/RstpyLgurQ3qz3JyyJE+Xj8XjMDdS11NHR3gqb9wOu+JlhwhIyXDmAy5NK7bn3N9suWJu+no7iBb+4ckZQkoA/bu8gk3nhTFzA3Ingod1X9WV0lBq1draKr5j1H2JOfi1q/azmAr88yxlFSQLGHvxMNLY1ktm8mjuaxcGHh7VFkuakxIrtd/4Uda319KlaoZ192Qe021F84/be36fZ40vwB35x/hpBSQLAT9c2a2ebU5T0MJn10yjKEgAWys7Nu/fvyIXwVFtnu5JLjwulCQCjk8aLzJIb5E54CUsmq3g7vjfKEwD83Zb2ZaFnzvlkFsoTgE4X1mALVx15fIz1yyyUJ+D3m1vJlfDU68Y3rF9moTwBt4NYMrKvyl/P3QjKE6D30nM4aV36BtY3M1CeAJw9uId++vaZaJe3dOGi4toSbbJoc+ZvSteYVp6A3gyLH60tVbAza7e2lCRGF+3uJ2B27Nm7PHGv/L7WM19z9Ucx8fDnrP0qsDQBekw5Gi02XNuknXEvawqVLuSN1VrSizK0xZfwYgbmADibrAIJsGTd6GAYlRQllpxfLs/IQyKnMlc0+5kq1BM6UkW1xdroK9YfnXo8hm3PTpAApSvneoK3I3FvjTnh8Ycms8d4gnH6mafnaGftteJM8VbnsoXLCRIWl5sgVlxaJcYlT2Tr8wSLis9Oma8NOZx7ccHvjJ2ZuNaOtmTjBpzZjR5TfpWNleKCjzliPaYcidbuTo4+Oa4lBkEL9nLy5Ynp2lv7niO3Zi2ZHAC1rgRYsl/YoUdHyEV34drPHa8afLOq3leRFe6adWYuW8Zk/l89Xfm2VRiU05sjWH1lnTZVaAdn8lLJCnepWCGR4cO2VvJ/lF6GcOsZTsL2JopfIOy5/Lgk/6Bs5zw4UlZfTq6Fj9bIbybnj0m476wn/6DsbgjTjpwwSooest2g18spv+q5PHmGsz6ZgPd2t/KPSjpleCGb0w3r7jZ8gltQPa1mHqE0AfcdlFySH2AvMVO3M5lwaIruQ7drr65ny1gNNg/F7TAn7K7ElTEA4uu+h1hvyQ9N3VHjQE48ueIuLI6BsSGujB1gZz09mXxLOoRCrS95kCk/yMMSRoua5hpyw124/ePK2AU6ZXoKpaOoQ1Bb2p70KBw0/2THkQvesmCHoqDxtZ0ihkK4MkFwkkIbmGQB/B4Y2lkVZxWWJuPAEmFcGTvBk9N4T4Aj0HElHRBH/eu+nlBIYvib0M9B/IIPfm/JCiIb+4dG6Bv6e0pWhnkD27a7DTMQp559Is2UrBSXpMi3wTeIj7FLjj/JBjBsYckQdhiBeHgPL6iUbBDfCAxl99cfavgN/0M84wcM+A/FhiCkOIE4xwAAAABJRU5ErkJggg==" InformativeScreenshot="8b4ac0d59146147d222e4d1164251d7f.jpg" Selector="&lt;html app='chrome.exe' title='ConfirmTkt.com: Fastest Train Ticket Booking with easy IRCTC Login' /&gt;" Title="ConfirmTkt.com: Fastest Train Ticket Booking with easy IRCTC Login" Url="https://www.confirmtkt.com/" />
+      </uix:NApplicationCard.TargetApp>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </uix:NApplicationCard>
+    <umab:GmailApplicationCard ConnectionAccountName="{x:Null}" ConnectionId="{x:Null}" Account="santhoshrpaacc@gmail.com (1)" DisplayName="Use Gmail" EmailAddress="santhoshrpaacc@gmail.com" sap:VirtualizedContainerService.HintSize="530,719.3333333333334" sap2010:WorkflowViewState.IdRef="GmailApplicationCard_1" Timeout="90" UseConnectionService="False">
+      <umab:GmailApplicationCard.Body>
+        <ActivityAction x:TypeArguments="um:IMailQuickHandle">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="um:IMailQuickHandle" Name="Gmail" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="496,508.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_9">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <umab:SendMailX Bcc="{x:Null}" Cc="{x:Null}" HtmlBodyFromText="{x:Null}" ReplyTo="{x:Null}" Account="[Gmail]" Body="[dt_TrainDetails.Rows(0).Item(&quot;Train Name&quot;).ToString + &quot;\n&quot; + dt_TrainDetails.Rows(0).Item(&quot;Train No&quot;).ToString]" DisplayName="Send Email" sap:VirtualizedContainerService.HintSize="434,424" sap2010:WorkflowViewState.IdRef="SendMailX_1" Importance="Normal" IsDraft="False" MaxBodyDocumentSizeMB="2" Sensitivity="Normal" Subject="Train Availability - Testing" To="santhoshrpaacc@gmail.com" UseDocumentAsBody="False">
+              <umab:SendMailX.Files>
+                <scg:List x:TypeArguments="InArgument(x:String)" Capacity="0" />
+              </umab:SendMailX.Files>
+              <umab:SendMailX.HtmlBodyFromFile>
+                <umabh:HtmlContentArgument FilePath="{x:Null}" HtmlBody="&lt;HTML&gt;&lt;HEAD&gt;&#xA;&lt;STYLE type=text/css&gt;&#xA;        body {&#xA;            font-family: Calibri;&#xA;        }&#xA;&#xA;        p {&#xA;            margin: 0;&#xA;        }&#xA;&#xA;        .mapping {&#xA;            background-color: #D3D4D7;&#xA;            color: black;&#xA;            padding: 1px;&#xA;        }&#xA;    &lt;/STYLE&gt;&#xA;&lt;!-- Instruct the web browser control to use IE 6 to render the page. --&gt;&#xA;&lt;META content=IE=6 http-equiv=X-UA-Compatible&gt;&lt;/HEAD&gt;&#xA;&lt;BODY&gt;&#xA;&lt;P&gt;Hello Anjana,&lt;/P&gt;&#xA;&lt;P&gt;&lt;BR&gt;Count 1&lt;BR&gt;&lt;/P&gt;&#xA;&lt;P&gt;&lt;STRONG&gt;Train No.: &lt;/STRONG&gt;&lt;SPAN class=mapping contentEditable=false&gt;{{trainNo1}}&lt;/SPAN&gt;&lt;BR&gt;&lt;STRONG&gt;Train Name: &lt;/STRONG&gt;&lt;SPAN class=mapping contentEditable=false&gt;{{trainName1}}&lt;/SPAN&gt;&lt;BR&gt;&lt;STRONG&gt;Departure Time: &lt;SPAN class=mapping contentEditable=false&gt;{{trainDeparture1}}&lt;/SPAN&gt;&lt;BR&gt;Arrival Time: &lt;SPAN class=mapping contentEditable=false&gt;{{trainArrival1}}&lt;/SPAN&gt;&lt;BR&gt;Travel Duration: &lt;SPAN class=mapping contentEditable=false&gt;{{trainDuration1}}&lt;/SPAN&gt;&lt;BR&gt;Seat Availability: &lt;SPAN class=mapping contentEditable=false&gt;{{trainSeat}}&lt;/SPAN&gt;&lt;BR&gt;&lt;/STRONG&gt;&lt;/P&gt;&#xA;&lt;P&gt;&amp;nbsp;&lt;/P&gt;&#xA;&lt;P&gt;Have a Happy Journey!&lt;BR&gt;&lt;/P&gt;&#xA;&lt;P&gt;Thank you&lt;/P&gt;&lt;/BODY&gt;&lt;/HTML&gt;">
+                  <umabh:HtmlContentArgument.RuntimeImages>
+                    <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
+                  </umabh:HtmlContentArgument.RuntimeImages>
+                  <umabh:HtmlContentArgument.ValueMappings>
+                    <scg:List x:TypeArguments="umabh:HtmlValueMappingBase" Capacity="8">
+                      <umabh:HtmlTextValueMapping Name="trainNo1" Value="[dt_TrainDetails.Rows(0).Item(&quot;Train No&quot;)]" />
+                      <umabh:HtmlTextValueMapping Name="trainName1" Value="[dt_TrainDetails.Rows(0).Item(&quot;Train Name&quot;)]" />
+                      <umabh:HtmlTextValueMapping Name="trainDeparture1" Value="[dt_TrainDetails.Rows(0).Item(&quot;Departure Time&quot;)]" />
+                      <umabh:HtmlTextValueMapping Name="trainArrival1" Value="[dt_TrainDetails.Rows(0).Item(&quot;Arrival Time&quot;)]" />
+                      <umabh:HtmlTextValueMapping Name="trainDuration1" Value="[dt_TrainDetails.Rows(0).Item(&quot;Duration&quot;)]" />
+                      <umabh:HtmlTextValueMapping Name="trainSeat" Value="[dt_TrainDetails.Rows(0).Item(&quot;Seat Availability&quot;)]" />
+                    </scg:List>
+                  </umabh:HtmlContentArgument.ValueMappings>
+                </umabh:HtmlContentArgument>
+              </umab:SendMailX.HtmlBodyFromFile>
+            </umab:SendMailX>
+          </Sequence>
+        </ActivityAction>
+      </umab:GmailApplicationCard.Body>
+      <umab:GmailApplicationCard.ClientId>
+        <InArgument x:TypeArguments="x:String">
+          <Literal x:TypeArguments="x:String" Value="" />
+        </InArgument>
+      </umab:GmailApplicationCard.ClientId>
+      <umab:GmailApplicationCard.ClientSecret>
+        <InArgument x:TypeArguments="x:String">
+          <Literal x:TypeArguments="x:String" Value="" />
+        </InArgument>
+      </umab:GmailApplicationCard.ClientSecret>
+    </umab:GmailApplicationCard>
+  </Sequence>
+</Activity>
